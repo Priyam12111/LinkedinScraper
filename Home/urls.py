@@ -1,0 +1,10 @@
+from django.contrib import admin
+from django.urls import path
+from Home import views
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.index,name="HOME"),
+    path('download_file', views.download_file,name="HOME"),
+]
